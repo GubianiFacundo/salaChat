@@ -1,0 +1,13 @@
+<!-- <input type="text" class="cuadrado" placeholder="Escribir..."> -->
+
+<div class="barra_mensaje">
+    <!-- <textarea class="mensaje_usuario"></textarea>  -->
+    
+    <input (keyup)="onKey($event)" id="texto_enviar" type="text" [(ngModel)]='texto_mensaje' class="form-control">
+    
+    <button id="btok" class="btn btn-outline-primary" (click)="send()"> Enviar</button>
+    
+    <!-- <p>{{sala_actual.username}}</p>
+    <p>{{user_actual.name}}</p> -->
+</div>
+  

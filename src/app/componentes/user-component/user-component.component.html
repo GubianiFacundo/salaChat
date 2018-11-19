@@ -1,0 +1,30 @@
+<!-- contenedor para entrar a la salsa -->
+<!-- <div class="sala2">
+  <form>
+    <div class="form-group">
+      <label for="edNombre">Poné tu nombre bien cheto</label>
+      <input type="text" name="edNombre" class="form-control" placeholder="Nombre" [(ngModel)]='user.username' />
+      <p>{{ user.username }}</p>
+      <small id="emailHelp" class="form-text text-muted">Considerá fuertemente que lo verán todos, dejamos en tus manos ser o no un gil (Luv'ya♥).</small>
+    </div>
+  </form>
+  <input type="submit" value= 'Apreta acá cheto' class="btn btn-danger" (click)= 'loguearUsuario()'/>
+</div> -->
+
+<h2>
+  <span class="badge badge-secondary">Registro</span>
+</h2>
+<div class="contenedor_registro">
+
+<h2 style="text-align:center">Bienvenido a mi sala de chat! </h2>
+<div class="rounded">
+    <div class="form-group" >
+        <label class="text-monospace">Usuario </label> 
+        <input (keyup)="onKey($event)" type="text" class="form-control" [(ngModel)]='miUser.username' placeholder="Ingresar Usuario">
+        
+        <button id="btok" class="btn btn-primary" (click)="loguearUsuario()"> Registrar</button>
+      </div>
+</div>
+
+
+</div>

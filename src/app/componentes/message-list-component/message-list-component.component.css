@@ -1,0 +1,30 @@
+.rounded
+{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 15px;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 700px;
+    margin-left: 50px;
+    box-shadow: 0 0 10px gray;
+    background-image: url("/src/app/imagenes/Fondo4.jpg");
+    background-size: contain;
+    overflow: auto;
+    line-height: 15px;
+}
+
+.titulo
+{
+    margin-left: 50px;
+}
+.badge-secondary
+{
+    margin-left: 50px;
+    background-color: cornflowerblue;
+}
+.text-monspace
+{
+    white-space: pre-line;
+}

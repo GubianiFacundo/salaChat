@@ -1,0 +1,31 @@
+.mensaje_usuario
+{
+    margin-left: 50px;
+    margin-right: 5px;
+    height: 30px;
+    width: 620px;
+}
+.enviar
+{
+    height: 35px;
+    width: 76px;
+}
+.barra_mensaje
+{    
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    border: 2px;
+    border-color: black;
+}
+.clear
+{
+    clear: both;
+}
+.form-control
+{
+    margin-left: 50px;
+    margin-right: 5px;
+    height: 40px;
+    width: 620px;
+}

@@ -1,0 +1,49 @@
+/* .sala{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sala2{
+    display: flex;
+    flex-direction: column;
+} */
+
+.registro
+{
+    width: 200px;
+    height: 120px;
+    padding-top: 5px;
+    
+
+    border-color: black;
+    border-style: solid;
+    border: 5px;
+
+    
+    box-shadow: 0 0 10px gray;
+}
+.btn-primary
+{
+    margin-top: 10px;
+}
+
+.contenedor_registro
+{
+    flex-wrap: wrap;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group
+{
+    width: 300px;
+    padding: 8px;
+    margin: 5px;
+}
+.rounded
+{
+    margin-top: 10px;
+    box-shadow: 0 0 10px gray;
+}

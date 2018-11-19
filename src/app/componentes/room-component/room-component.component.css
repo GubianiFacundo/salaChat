@@ -1,0 +1,62 @@
+/* .sala{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    background-color: grey;
+}
+
+.sala2{
+    width: calc(45% - 10);
+    flex-direction: column;
+    margin: 25px;
+    background-color: cornflowerblue;
+}
+
+.sala3{
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    background-color: aquamarine;
+}
+
+.sala4 {
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    background-color: aquamarine;
+} */
+
+.badge-secondary
+{
+    color:white;
+    background-color:steelblue;
+}
+.badge-primary
+{
+    color:white;
+    background-color:dimgrey;
+}
+.btn-secondary
+{
+    margin-left: 10px;
+}
+.nueva_sala
+{ 
+    padding-top: 5px;
+    box-shadow: 0 0 10px gray;
+}
+.rounded
+{
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.form-control
+{
+    background-size: auto;
+}

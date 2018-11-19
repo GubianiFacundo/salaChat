@@ -1,0 +1,36 @@
+ <!-- <app-user-component (userLogged)= 'crearUsuario($event)' *ngIf='!usuarioLogueado'></app-user-component>
+ <app-room-component *ngIf='usuarioLogueado'></app-room-component>
+  -->
+
+  <!--The content below is only a placeholder and can be replaced.-->
+<body class="contenedor">
+    <div style="text-align:center">
+      <h1>
+        {{ title }}
+      </h1>
+    </div>
+    
+  
+    <div class="pagina">
+      <app-nuevo-componente></app-nuevo-componente>
+      <div class="registro">
+        <app-user-component (userLogger)="crearUsuario($event)" *ngIf="usuario_loggeado.username ==  null" ></app-user-component>
+      </div>
+  
+  
+      <div class="sala" *ngIf="usuario_loggeado.username !=  null">
+  
+  
+        <app-room-component (salaSeleccionada)="seleccionarSala($event)"></app-room-component>
+        <div class="mensajes">
+    
+          <app-message-list-component [estasala]="salaActual" *ngIf="salaActual.id !=  0" ></app-message-list-component>
+        
+          <app-message-form [sala_actual]="salaActual" [user_actual]="usuario_loggeado" (mensajeEnviado)="recibirMensaje($event)" *ngIf="salaActual.id !=  0" ></app-message-form>
+    
+        </div>
+      </div>
+  
+  
+    </div>
+  </body>

@@ -1,0 +1,37 @@
+<!-- <div class="sala">
+  <div class="sala2" > -->
+      <!-- *ngFor='let sala of Salas' (click)='salaActual=sala' {{sala.nombreSala}} -->
+      <!-- <h1>Bienvenido, esto es la sala!!!</h1>
+      <input type="button" value="Sala 1: Pública"/>
+  </div>
+  <div class="sala2" > -->
+      <!-- *ngIf='salaActual' -->
+    <!-- <div class="sala3">
+      <app-message-list-component  ></app-message-list-component> -->
+      <!-- [mensajes]='salaActual' -->
+    <!-- </div>
+    <div class="sala4">
+      <app-message-form></app-message-form>
+    </div>
+  </div>
+</div> -->
+
+
+<h2>
+  <span class="badge badge-secondary">Lista de salas</span>
+</h2>
+
+<div class="form-group">
+<select class="form-control" multiple size="15">
+  <option *ngFor="let Sala of salas" (click)="seleccionar(Sala)" class="text-monospace" >sala: {{Sala.name}} </option> 
+</select>
+</div>
+
+<br>
+<div class="rounded">
+<h2><span class="badge badge-primary">Crear nueva sala</span></h2>
+<br>
+<label class="text-monospace">Nombre:</label>
+<input type="text" [(ngModel)]='nombre_sala'>
+<button class="btn btn-lg btn-secondary" (click)="crearSala()" >Crear</button>
+</div>
